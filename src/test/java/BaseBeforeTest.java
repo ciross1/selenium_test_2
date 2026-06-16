@@ -39,6 +39,7 @@ Chrome nutzt diesen standardmäßig stark und kann abstürzen. Diese Option sagt
             options.addArguments("--headless");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--window-size=1920,1080");  //Wichtig sonst der server kennt die Grösse des Fensters nicht
             driver = new ChromeDriver(options);
         }
 
@@ -49,3 +50,11 @@ Chrome nutzt diesen standardmäßig stark und kann abstürzen. Diese Option sagt
         }
 
     }
+
+
+
+    /*alles was unter
+    src/test/java liegt und mit @Test annotiert ist ,wird automatisch ausgeführt.
+Maven sucht bei mvn test automatisch alle Klassen in
+diesem Ordner und führt jede Methodemit @Test aus.
+ Du musst nichts extra konfigurieren, solange die Testklassen dort liegen.*/
