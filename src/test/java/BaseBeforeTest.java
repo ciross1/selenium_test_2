@@ -39,7 +39,7 @@ Chrome nutzt diesen standardmäßig stark und kann abstürzen. Diese Option sagt
             options.addArguments("--headless");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--window-size=1920,1080");  //Wichtig sonst der server kennt die Grösse des Fensters nicht
+            options.addArguments("--window-size=1920,1080");  
             driver = new ChromeDriver(options);
         }
 
